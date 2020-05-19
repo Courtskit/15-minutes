@@ -19,28 +19,44 @@ function Quote(title, quoteText, author){
 /// FUNCTIONS:
 // load the quotes from quotes.json
 function loadQuotes(){
-  // think we need a local var here, so we can run all this through the constructor function.
-  quoteBucket = JSON.parse(Quotes);
+  var quotesJSONified = JSON.parse(Quotes); //read the JSON file
+  for (var i=0; i<quotesJSONified.length; i++){
+    quoteBucket.push(new Quote( //process contents through object constructor and push to array.
+      quotesJSONified[i].title,
+      quotesJSONified[i].quoteText,
+      quotesJSONified[i].author
+    ));
+  }
 }
 
 // display a random quote
-function displayRandomQuote(){
-  // grab parent element inside of quote bubble.
-  // select an object at index of [Math.random within the range of quoteBucket.length]
-  // create a <p> element, fill it with text from quoteBucket[index].quoteText, append to parent.
-  // create a <p> element, (or other type?), fill it with quoteBucket[index].author, maybe as a string literal like `~ ${author}`
-  // and append to parent.
-  // updateUserData('quote', quoteBucket[index].title);
+function displayRandomQuote(){ //TO DO: this still needs to check against userdata to prevent repeats.
+  var randomNumber = Math.floor(Math.random() * quoteBucket.length);
+  var quoteContainer = document.getElementById('quote');//check if that's the right ID
+  var content = document.createElement('p');
+  content.id = 'quote-body'; //just in case we need to target this for styling.
+  content.textContent = quoteBucket[randomNumber].quoteText;
+  quoteContainer.appendChild(content);
+  var author = document.createElement('p');
+  author.id = 'author'; //in case we need to target for styling
+  author.textContent = `~ ${quoteBucket[randomNumber].author}`;
+  quoteContainer.appendChild(author);
+
+  updateUserData('quote', quoteBucket[index].title);
   // attach event listener for 'click'
 }
 
 // called when user clicks on quote to generate a new quote.
-function rotateQuote(event){
-  event.preventDefault();
-  // grab parent element inside of quote bubble.
-  // clear contents of parent.
-  displayRandomQuote();
-}
+// might use this later?
+// function rotateQuote(event){
+//   event.preventDefault();
+//   // grab parent element inside of quote bubble.
+//   // clear contents of parent.
+//   displayRandomQuote();
+// }
 
 
 /// EXECUTIBLE CODE:
+
+loadQuotes();
+displayRandomQuote();

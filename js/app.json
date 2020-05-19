@@ -1,0 +1,58 @@
+'use strict';
+
+
+
+
+//SELF CARE:
+{"title" : "FaceTime Mom", "image" : "/img/imagefile.png", "shortContent" : "Call Mom for 30min", "extendedContent" : "Reach out to your family, talk and connect via phone or FaceTime. With all of the technology we have at our fingertips, make use of your social network."}
+
+{"title" : "Read a Book & Drink Some Tea", "image" : "/img/imagefile.png", "shortContent" : "agshv", "extendedContent" : "Forget about the outside world reading about history, etc"}
+
+{"title" : "Order Something Fun", "image" : "/img/imagefile.png", "shortContent" : "Order yourself something fun for 10 dollars", "extendedContent" : "Get something fun from amazon or any other web store,"}
+
+{"title" : "Call/Chat With a Friend", "image" : "/img/imagefile.png", "shortContent" : "Do a plank for 60 seconds. You got this!", "extendedContent" : "Our friendships are among the most valuable relationships we have. We may talk to friends in confidence about things we wouldn't discuss with our families. Our friends may annoy us, but they can also keep us going.."}
+
+{"title" : "Meditate", "image" : "/img/imagefile.png", "shortContent" : "Meditate for five or ten minutes.", "extendedContent" : "1.Get comfortable and prepare to sit still for a few minutes. After you stop reading this, you’re going to simply focus on your own natural inhaling and exhaling of breath. 2.Focus on your breath. Where do you feel your breath most? In your belly? In your nose? Try to keep your attention on your inhale and exhale. 3.Follow your breath for two minutes. Take a deep inhale, expanding your belly, and then exhale slowly, elongating the out-breath as your belly contracts."}
+
+{"title" : "Watch a Movie", "image" : "/img/imagefile.png", "shortContent" : "", "extendedContent" : "Watching movies encourages emotional release. Even those who often have trouble expressing their emotions might find themselves laughing or crying during a film. This release of emotions can have a cathartic effect and also make it easier for a person to become more comfortable in expressing their emotions."}
+
+{"title" : "Take a Bath", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : "A good bath might be seen as a little luxury now and then, but beyond some essential self-care, it actually has scientifically proven benefits for your mental health"}
+
+{"title" : "Face Mask", "image" : "/img/imagefile.png", "shortContent" : "", "extendedContent" : "Take some time ad take care of your face,"}
+
+{"title" : "Listen to a Podcast", "image" : "/img/imagefile.png", "shortContent" : "AAAA", "extendedContent" : "Podcasts have become a popular medium for sharing information in an engaging, digestible, and on-the-go way. Easy to stream and download digitally"}
+
+{"title" : "Journal your thoughts", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}
+
+{"title" : "Go Spend 15 Minutes Outside", "image" : "/img/imagefile.png", "shortContent" : "Take a wal for at least 15 minutes", "extendedContent" : "A good walk can do wonders for your mental wellbeing.Being active has a whole range of benefits when it comes to mental wellbeing. It improves self-perception and self-esteem, mood and sleep quality, and it reduces stress, anxiety and fatigue."}
+
+//FITNESS:
+{"title" : "Do A Plank", "image" : "/img/imagefile.png", "shortContent" : "Do a plank for 60 seconds. You got this!", "extendedContent" : "Planking is a very effective way to build better core strength. Place your toes not more than 12 inches apart. Your elbows should be inline with your shoulders. Make your body straight as a board and focus on trying to pull your belly button toward your spine. Don't forget to breathe."}
+
+{"title" : "Air Squat", "image" : "/img/imagefile.png", "shortContent" : "Do air squats for 5 minutes. You got this!", "extendedContent" : "You should feel the squat in your thighs and in your glutes. To do an air squat: Keep your feet at shoulder width apart and pointed straight ahead. When squatting, your hips will move down and back."}
+
+{"title" : "Do A Plank", "image" : "/img/imagefile.png", "shortContent" : "Do a plank for 60 seconds. You got this!", "extendedContent" : "Planking is a very effective way to build better core strength. Place your toes not more than 12 inches apart. Your elbows should be inline with your shoulders. Make your body straight as a board and focus on trying to pull your belly button toward your spine. Don't forget to breathe."}
+
+{"title" : "Squat-bender", "image" : "/img/imagefile.png", "shortContent" : "Do squats-bender for 5 minutes. You got this!", "extendedContent" : "Squat while leaning slightly forward at the waist with the head up and extend the arms to the front, with arms parallel to the ground and palms facing inward. Return to the starting position. Bend forward and reach toward the ground with both arms extended and palms inward. Return to the starting position."}
+
+{"title" : "Crunches", "image" : "/img/imagefile.png", "shortContent" : "Do a plank for 60 seconds. You got this!", "extendedContent" : "1.Lie down on your back. Plant your feet on the floor, hip-width apart. Bend your knees and place your arms across your chest. Contract your abs and inhale. 2.Exhale and lift your upper body, keeping your head and neck relaxed. 3.Inhale and return to the starting position."}
+
+{"title" : "Supine Rows", "image" : "/img/imagefile.png", "shortContent" : "Do a plank for 60 seconds. You got this!", "extendedContent" : "1. Set the bar (or your rings) around waist height... 1.Position yourself under the bar lying face up... 3.Grab the bar with an overhand grip, slightly wider than shoulder width (palms facing AWAY from you). 4.Contract your abs and butt, and keep your body a completely straight line."}
+
+
+//NUTRITION
+{"title" : "Eat six small meal each day", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : "You’ve probably heard the advice that eating small meals throughout the day is how you win the battle of the bulge. The claim is that frequent snacking, as long as it’s healthy, keeps your metabolism humming, staves off hunger, and controls blood sugar."}
+
+{"title" : "Eat breakfast", "image" : "/img/imagefile.png", "shortContent" : "Eat breakfast everyday, within an hour of rising", "extendedContent" : "1. Starting your morning with breakfast will boost your metabolism and keep your blood sugar levels stable during the day. 2. A morning meal helps energize your body, keeping you active and productive until lunch."}
+
+{"title" : "Combine protein and carbs each meal", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}
+
+{"title" : "Eat healthy fats everyday", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}
+
+{"title" : "Drink 2 or 3 liters of water each day", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}
+
+{"title" : "Carry a cooler pack with clean foods each day", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}
+
+{"title" : "Journal your thoughts", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}
+
+{"title" : "Journal your thoughts", "image" : "/img/imagefile.png", "shortContent" : "AAA", "extendedContent" : ""}

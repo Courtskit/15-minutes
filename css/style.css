@@ -1,83 +1,111 @@
-header, footer {
-
-}
+/* this holds all of the circles */
 #allCirclesContainer {
-  width: 97vw;
   max-width: 97vw;
-  height: 80vh;
   max-height: 80vh;
   margin: auto;
   overflow-x: none; 
-  overflow-y: auto;
+  overflow-y: none;
   display: block;
 }
 
+/* class that makes circles */
 .circle {
   border-radius: 50%;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
-  border: 1px solid lightgrey;
 }
 
+/* makes p elements - words center on circle*/
 p{
   text-align: center;
-  border: 2px solid pink;
   margin: 40% auto;
-  font-size: 3vw;
+  font-size: 3.6vw;
+  color: white;
 }
 
-#physical{
-  border: 2px solid red;
-  width: 18vw;
-  height: 18vw;
-  position: absolute;
-  margin: 2vw 2vw;
-}
-
-#quote{
-  border: 2px solid red;
-  width: 13vw;
-  height: 13vw;
-  position: absolute;
-  margin: 8vw 30vw;
-}
-
-#nutrition{
-  border: 2px solid red;
-  width: 18vw;
-  height: 18vw; 
-  position: absolute;
-  margin: 12vw 52vw;
-}
-
-#mental{
-  border: 2px solid red;
-  width: 20vw;
-  height: 20vw; 
-  position: absolute;
-  margin: .2vw 76vw;
-}
-
-#random{
-  border: 2px solid red;
-  width: 28vw;
-  height: 28vw; 
-  position: absolute;
-  margin: 22vw 6vw;
-}
-
-#aboutus{
-  border: 2px solid red;
-  width: 9vw;
-  height: 9vw;
-  position: absolute;
-  margin: 32vw 42vw;
-}
-
-#username {
-  border: 2px solid red;
+/* this is the body circle */
+#body {
   width: 16vw;
   height: 16vw;
   position: absolute;
   margin: 26vw 73vw;
+  background-color: rgba(212, 177, 149, 0.658);
+}
+
+/* this is the quotes circle */
+#quote{
+  width: 27vw;
+  height: 27vw; 
+  position: absolute;
+  margin: 22vw 6vw;
+  background-color: rgba(178, 149, 212, 0.425);
+  text-underline-position: inherit;
+}
+
+/* this is the container that the quote will be in  */
+.pQuote{
+  text-underline-position: inherit;
+  margin: auto;
+  padding: 2vw;
+  font-size: 1.8vw;
+  height: 15vw; 
+  max-width: 20vw;
+  vertical-align: auto;
+}
+
+/* this is the nourish circle */
+#nourish{
+  width: 18vw;
+  height: 18vw; 
+  position: absolute;
+  margin: 12vw 52vw;
+  background-color: rgba(149, 212, 191, 0.658);
+}
+
+/* this is the mind circle */
+#mind{
+  width: 20vw;
+  height: 20vw; 
+  position: absolute;
+  margin: .2vw 76vw;
+  background-color: rgba(149, 205, 212, 0.658);
+}
+
+/* this is the random circle */
+#random{
+  width: 13vw;
+  height: 13vw;
+  position: absolute;
+  margin: 8vw 30vw;
+  background-color: rgba(212, 149, 207, 0.452);
+}
+.pRandom{
+  margin: 36% auto;
+  font-size: 3.2vw;
+}
+
+/* this is the about circle  */
+#about{
+  width: 9vw;
+  height: 9vw;
+  position: absolute;
+  margin: 32vw 42vw;
+  background-color: rgba(149, 181, 212, 0.658);
+}
+.pAbout{
+  margin: 35% auto;
+  font-size: 2.6vw;
+}
+
+/* this is the username circle  */
+#username{
+  width: 18vw;
+  height: 18vw;
+  position: absolute;
+  margin: 2vw 2vw;
+  background-color: rgba(212, 208, 149, 0.658);
+}
+.pUsername{
+  margin: 36% auto;
+  font-size: 2.2vw;
 }

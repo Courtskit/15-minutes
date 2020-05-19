@@ -2,7 +2,7 @@
 /// GLOBAL VARIABLES:
 var userData; // should be filled with an object containing what we want to remember about the user
 var quoteBucket = []; // hold our Quote objects
-var activityBucket = []; // hold our activity objects. We might want to split this into 3 seperate arrays, not sure.
+//var activityBucket = []; // hold our activity objects. We might want to split this into 3 seperate arrays, not sure.
 
 /// OBJECT CONSTRUCTORS:
 // build object for userdata storage
@@ -53,7 +53,7 @@ function userSetupForm(){
 // receive data from userSetupForm
 function handleUserSetupForm(event){
   event.preventDefault();
-  userData = new UserData(event.target.SOMETHING); // push form data directly to object constructor and our job is done.
+  userData = new UserData(event.target.'SOMETHING'); // push form data directly to object constructor and our job is done.
 }
 
 // load the quotes from quotes.json

@@ -1,1 +1,16 @@
 'use strict';
+/// GLOBAL VARIABLES:
+
+
+/// OBJECT CONSTRUCTORS:
+
+
+/// PROTOTYPES:
+
+
+/// FUNCTIONS:
+
+
+/// EXECUTABLE CODE:
+
+

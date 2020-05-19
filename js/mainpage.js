@@ -1,6 +1,8 @@
 'use strict';
 /// GLOBAL VARIABLES:
 var userData; // should be filled with an object containing what we want to remember about the user
+var quoteBucket = []; // hold our Quote objects
+var activityBucket = []; // hold our activity objects. We might want to split this into 3 seperate arrays, not sure.
 
 /// OBJECT CONSTRUCTORS:
 // build object for userdata storage
@@ -32,8 +34,48 @@ function Activity(title, image, shortContent, extendedContent){
 
 
 /// FUNCTIONS:
+// check localstorage for userdata, load it if we have it, call the form request function if we don't.
+function loadUserData(){
+  // if (we find userdata in localstorage){userData = new UserData(JSON.parse(the stuff we find in localstorage))}
+  // else{userSetupForm();}
+}
 
+// prompt for user's name
+function userSetupForm(){
+  // grab a parent element
+  // create a form element
+  // create message element with instructions
+  // create input elements
+  // create submit element
+  // attach listener
+}
+
+// receive data from userSetupForm
+function handleUserSetupForm(event){
+  event.preventDefault();
+  userData = new UserData(event.target.SOMETHING); // push form data directly to object constructor and our job is done.
+}
+
+// display a random quote
+function displayRandomQuote(){
+  // grab parent element inside of quote bubble.
+  // select an object at index of [Math.random within the range of quoteBucket.length]
+  // create a <p> element, fill it with text from quoteBucket[index].quoteText, append to parent.
+  // create a <p> element, (or other type?), fill it with quoteBucket[index].author, maybe as a string literal like `~ ${author}`
+  // and append to parent.
+  // push title to UserData.lastQuote[]
+  // attach event listener for 'click'
+}
+
+// called when user clicks on quote to generate a new quote.
+function rotateQuote(event){
+  event.preventDefault();
+  // grab parent element inside of quote bubble.
+  // clear contents of parent.
+  displayRandomQuote();
+}
 
 /// EXECUTABLE CODE:
 
-
+// loadUserData();
+// displayRandomQuote();

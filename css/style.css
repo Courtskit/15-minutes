@@ -23,6 +23,11 @@ p{
   color: white;
 }
 
+a{
+  text-decoration: none;
+  color:white;
+}
+
 /* this is the body circle */
 #body {
   width: 16vw;

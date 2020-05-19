@@ -4,7 +4,7 @@ var userData; // should be filled with an object containing what we want to reme
 
 /// OBJECT CONSTRUCTORS:
 // build object for userdata storage
-function UserData(userName, lastFitness=[], lastMental=[], lastNutrition=[], lastNutrition=[], lastQuote=[]){ // params come from the form or from localstorage
+function UserData(userName, lastFitness=[], lastMental=[], lastNutrition=[], lastQuote=[]){ // params come from the form or from localstorage
   this.userName = userName;
   this.lastFitness = lastFitness; // I was thinking we could use arrays to store history.
   this.lastMental = lastMental; // push title of activity into array, unshift if array is longer than certain length.
@@ -21,9 +21,10 @@ function UserData(userName, lastFitness=[], lastMental=[], lastNutrition=[], las
 // receive data from userSetupForm
 function handleUserSetupForm(event){
   event.preventDefault();
-  userData = new UserData(event.target.nameField.value); // push form data directly to object constructor and our job is done.
-  var form = document.getElementById('delete-me'); 
+  userData.userName = event.target.nameField.value; // push form data directly to object constructor and our job is done.
+  var form = document.getElementById('delete-me');
   form.remove(); // make form go bye-bye.
+  saveUserData();
 }
 
 
@@ -45,10 +46,13 @@ function userSetupForm(){
   form.appendChild(label);
   var nameField = document.createElement('input'); // they type there name here
   nameField.id = 'name-field';
+  nameField.name = 'nameField';
   nameField.type = 'text';
   form.appendChild(nameField);
-  var submitButton = document.createElement('input'); // submit button
+  var submitButton = document.createElement('button'); // submit button
   submitButton.type = 'submit';
+  submitButton.name = 'submit';
+  submitButton.textContent = 'submit';
   form.addEventListener('submit', handleUserSetupForm);
 
 }
@@ -67,10 +71,15 @@ function loadUserData(){
       userDataFromStorage.lastQuote
     ); 
   } catch (error) {
+    userData = new UserData('');
     userSetupForm();
   }
 }
 
+function saveUserData(){
+  var saveUserData = JSON.stringify(userData); // stringify
+  localStorage.setItem('userData', saveUserData); // save locally
+}
 
 // update userdata and write to localstorage
 function updateUserData(type, title){// type must be EXACTLY either 'fitness', 'mental', 'nutrition', or 'quote'. title is title property of an object.
@@ -85,9 +94,7 @@ function updateUserData(type, title){// type must be EXACTLY either 'fitness', '
     case 'quote':
       userData.lastQuote.unshift(title);
   }
-
-  var saveUserData = JSON.stringify(userData); // stringify
-  localStorage.setItem('userData', saveUserData); // save locally
+  saveUserData();
 }
 
 

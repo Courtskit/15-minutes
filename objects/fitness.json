@@ -1,2 +1,2 @@
-Activities = '[]'
+Activities = '[{"title" : "test", "image" : "/img/test.png", "shortContent" : "this is a test", "extendedContent" : "test test test"},{"title" : "test2", "image" : "/img/test.png", "shortContent" : "this is a test, also", "extendedContent" : "test test test"}]'
 

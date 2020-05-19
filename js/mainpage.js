@@ -23,12 +23,12 @@ function Quote(title, quoteText, author){
 };
 
 // build activity objects
-function Activity(title, image, shortContent, extendedContent){
-  this.title = title; // each activity needs a unique title. We'll display this title to the user.
-  this.image = image; // image file path. Should point to something in the ./img/ folder.
-  this.shortContent = shortContent; // brief explaination. A long string that we can put inside a <p>
-  this.extendedContent = extendedContent; // we talked about the user being able to click for more details to be displayed.
-};
+// function Activity(title, image, shortContent, extendedContent){
+//   this.title = title; // each activity needs a unique title. We'll display this title to the user.
+//   this.image = image; // image file path. Should point to something in the ./img/ folder.
+//   this.shortContent = shortContent; // brief explaination. A long string that we can put inside a <p>
+//   this.extendedContent = extendedContent; // we talked about the user being able to click for more details to be displayed.
+// };
 
 /// PROTOTYPES:
 
@@ -48,6 +48,12 @@ function userSetupForm(){
   // create input elements
   // create submit element
   // attach listener
+}
+
+// update userdata and write to localstorage
+function updateUserData(){
+  var saveUserData = JSON.stringify(userData);
+  localStorage.setItem('userData', saveUserData);
 }
 
 // receive data from userSetupForm

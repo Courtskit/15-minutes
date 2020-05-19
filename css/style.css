@@ -1,0 +1,83 @@
+header, footer {
+
+}
+#allCirclesContainer {
+  width: 97vw;
+  max-width: 97vw;
+  height: 80vh;
+  max-height: 80vh;
+  margin: auto;
+  overflow-x: none; 
+  overflow-y: auto;
+  display: block;
+}
+
+.circle {
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 1px solid lightgrey;
+}
+
+p{
+  text-align: center;
+  border: 2px solid pink;
+  margin: 40% auto;
+  font-size: 3vw;
+}
+
+#physical{
+  border: 2px solid red;
+  width: 18vw;
+  height: 18vw;
+  position: absolute;
+  margin: 2vw 2vw;
+}
+
+#quote{
+  border: 2px solid red;
+  width: 13vw;
+  height: 13vw;
+  position: absolute;
+  margin: 8vw 30vw;
+}
+
+#nutrition{
+  border: 2px solid red;
+  width: 18vw;
+  height: 18vw; 
+  position: absolute;
+  margin: 12vw 52vw;
+}
+
+#mental{
+  border: 2px solid red;
+  width: 20vw;
+  height: 20vw; 
+  position: absolute;
+  margin: .2vw 76vw;
+}
+
+#random{
+  border: 2px solid red;
+  width: 28vw;
+  height: 28vw; 
+  position: absolute;
+  margin: 22vw 6vw;
+}
+
+#aboutus{
+  border: 2px solid red;
+  width: 9vw;
+  height: 9vw;
+  position: absolute;
+  margin: 32vw 42vw;
+}
+
+#username {
+  border: 2px solid red;
+  width: 16vw;
+  height: 16vw;
+  position: absolute;
+  margin: 26vw 73vw;
+}

@@ -77,13 +77,13 @@ function updateUserData(type, title){// type must be EXACTLY either 'fitness', '
   //used switch/case instead of if/else
   switch(type){
     case 'fitness':
-      userData.lastFitness.push(title);
+      userData.lastFitness.unshift(title);
     case 'mental':
-      userData.lastMental.push(title);
+      userData.lastMental.unshift(title);
     case 'nutrition':
-      userData.lastNutrition.push(title);
+      userData.lastNutrition.unshift(title);
     case 'quote':
-      userData.lastQuote.push(title);
+      userData.lastQuote.unshift(title);
   }
 
   var saveUserData = JSON.stringify(userData); // stringify
@@ -95,4 +95,3 @@ function updateUserData(type, title){// type must be EXACTLY either 'fitness', '
 /// EXECUTABLE CODE:
 
 loadUserData();
-//displayRandomQuote();

@@ -1,6 +1,5 @@
 'use strict';
 /// GLOBAL VARIABLES:
-//var userData = JSON.parse(localStorage.getItem('userData')); // should be filled with an object containing what we want to remember about the user
 var activityBucket = []; // hold our activity objects. We might want to split this into 3 seperate arrays, not sure.
 var pageTitle = document.getElementById(''); // this should be a header element who's ID tells us which activity page we're on.
 
@@ -49,15 +48,25 @@ function loadActivities(){
 
 // select a random activity
 function selectActivity(){
-  var randomNumber = Math.floor(Math.random() * activityBucket.length);
+  var lastActivity = []; //put activity history into here
+  switch(pageTitle.id){
+    case 'fitness':
+      lastActivity = userData.lastFitness;
+    case 'mental':
+      lastActivity = userData.lastMental;
+    case 'nutrition':
+      lastActivity = userData.lastNutrition;
+  }
   
-  // select an object at index of [Math.random within the range of activityBucket.length]
-  // check if category===activityBucket[index].category, if not, select again. This can be a while loop.
-  // activityBucket[index].render();
-  // push selection title to userData and updateUserData();
+  var randomNumber = Math.floor(Math.random() * activityBucket.length);
+  while (activityBucket[randomNumber].title === lastActivity[0]){ // make sure this isn't repeating the user's most recent activity
+    randomNumber = Math.floor(Math.random() * activityBucket.length);
+  }
+  activityBucket[randomNumber].render();
+  updateUserData(pageTitle.id, activityBucket[randomNumber].title);
 }
 
 /// EXECUTABLE CODE:
 loadActivities();
-//selectActivity();
+selectActivity();
 

@@ -56,6 +56,11 @@ function handleUserSetupForm(event){
   userData = new UserData(event.target.SOMETHING); // push form data directly to object constructor and our job is done.
 }
 
+// load the quotes from quotes.json
+function loadQuotes(){
+  quoteBucket = JSON.parse(Quotes);
+}
+
 // display a random quote
 function displayRandomQuote(){
   // grab parent element inside of quote bubble.
@@ -78,4 +83,5 @@ function rotateQuote(event){
 /// EXECUTABLE CODE:
 
 // loadUserData();
+// loadQuotes();
 // displayRandomQuote();

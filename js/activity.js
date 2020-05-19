@@ -1,7 +1,7 @@
 'use strict';
 /// GLOBAL VARIABLES:
 var activityBucket = []; // hold our activity objects. We might want to split this into 3 seperate arrays, not sure.
-var pageTitle = document.getElementById(''); // this should be a header element who's ID tells us which activity page we're on.
+var pageTitle = document.getElementsByClassName('activitypage'); // this should be a header element who's ID tells us which activity page we're on.
 
 /// OBJECT CONSTRUCTORS:
 // build activity objects
@@ -16,9 +16,9 @@ function Activity(title, image, shortContent, extendedContent){
 // activity render self to DOM
 Activity.prototype.render = function(){
   // grab parent element
-  var container = document.getElementById('');
+  var container = document.getElementById('activity-container');
   // create new element(s) + fill with content
-  var activityCard = document.createElement('');
+  var activityCard = document.createElement('div');
   activityCard.id = 'activity-card';
   container.appendChild(activityCard);
   var activityTitle = document.createElement('h2');

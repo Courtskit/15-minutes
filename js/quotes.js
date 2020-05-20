@@ -42,7 +42,7 @@ function displayRandomQuote(){ //TO DO: this still needs to check against userda
   author.textContent = `~ ${quoteBucket[randomNumber].author}`;
   quoteContainer.appendChild(author);
 
-  updateUserData('quote', quoteBucket[index].title);
+  updateUserData('quote', quoteBucket[randomNumber].title);
   // attach event listener for 'click'
 }
 

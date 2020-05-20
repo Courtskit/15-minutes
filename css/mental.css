@@ -1,0 +1,87 @@
+.mental {
+  width: 20vw;
+  height: 20vw;
+  border-radius: 50%;
+  font-size: 4vw;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  position: fixed;
+  margin: .2vw 76vw;
+  background-color: rgba(149, 205, 212, 0.658);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  width: 10vw;
+  height: 10vw;
+  border-radius: 50%;
+  font-size: 2vw;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  position: fixed;
+  margin: 22vw 85vw;
+  background-color: rgba(149, 205, 212, 0.658);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.content {
+  width: 76vw;
+  height: 76vw;
+  border-radius: 50%;
+  font-size: 2vw;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  position: fixed;
+  margin: -3vw -3vw;
+  background-color: rgba(149, 205, 212, 0.658);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+#activity-card{
+  height: 58vw;
+  width: 58vw;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  place-items: center;
+}
+
+
+h2, img, p {
+  position: absolute;
+  place-items: center;
+  margin: auto;
+  width: inherit;
+  height: auto;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+h2{
+  top: 15%;
+  font-size: 8vw;
+}
+
+img{
+  top: 35%;
+}
+
+p{
+  top: 65%;
+  font-size: 4vw;
+}

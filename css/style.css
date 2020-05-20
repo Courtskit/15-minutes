@@ -114,3 +114,15 @@ a{
   height: 10vw; 
   max-width: 19vw;
 }
+
+
+
+
+
+/* here is a very simple transition class , this has been added to the about, nourish, mind, and body circles just for now.. for the MVP */
+.grow:hover{
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
+  transform: scale(1.3);
+  transition-duration: 2s;
+}

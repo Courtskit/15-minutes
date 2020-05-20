@@ -12,6 +12,8 @@
   display:flex;
   justify-content: center;
   align-items: center;
+  animation-name: moveToRight;
+  animation-duration: 3s;
 }
 
 .home {
@@ -85,3 +87,11 @@ p{
   top: 65%;
   font-size: 4vw;
 }
+@keyframes moveToRight {
+  0% {
+    transform: translateY(-60px) translateX(-30px);
+  }
+  100% {
+    transform:translateY(0px) translateX(0px);
+  }
+}  

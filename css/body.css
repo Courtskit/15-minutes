@@ -1,4 +1,4 @@
-.mental {
+.body {
   width: 20vw;
   height: 20vw;
   border-radius: 50%;
@@ -7,8 +7,8 @@
   line-height: 500px;
   text-align: center;
   position: fixed;
-  margin: .2vw 76vw;
-  background-color: rgba(149, 205, 212, 0.658);
+  margin: 30vw 76vw;
+  background-color: rgba(212, 177, 149, 0.658);
   display:flex;
   justify-content: center;
   align-items: center;
@@ -23,26 +23,26 @@
   line-height: 500px;
   text-align: center;
   position: fixed;
-  margin: 22vw 85vw;
+  margin: 18vw 85vw;
   background-color: rgba(149, 205, 212, 0.658);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
 
 .content {
-  width: 76vw;
-  height: 76vw;
+  width: 66vw;
+  height: 66vw;
   border-radius: 50%;
   font-size: 2vw;
   color: #fff;
   line-height: 500px;
   text-align: center;
   position: fixed;
-  margin: -3vw -3vw;
+  margin: -6vw 4vw;
   background-color: rgba(149, 205, 212, 0.658);
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }

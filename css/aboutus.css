@@ -1,0 +1,58 @@
+#Courtney{
+  width: 27vw;
+  height: 27vw; 
+  position: absolute;
+  margin: 2vw 2vw;
+  background-color: rgba(178, 149, 212, 0.425);
+  text-underline-position: inherit;
+}
+
+#Edgar{
+  width: 27vw;
+  height: 27vw; 
+  position: absolute;
+  margin: 22vw 48vw;
+  background-color: rgba(178, 149, 212, 0.425);
+  text-underline-position: inherit;
+}
+
+#Sarah{
+  width: 27vw;
+  height: 27vw; 
+  position: absolute;
+  margin: 1vw 30vw;
+  background-color: rgba(178, 149, 212, 0.425);
+  text-underline-position: inherit;
+}
+
+#Spencer{
+  width: 27vw;
+  height: 27vw; 
+  position: absolute;
+  margin: 32vw 2vw;
+  background-color: rgba(178, 149, 212, 0.425);
+  text-underline-position: inherit;
+}
+
+#return-to-home{
+  width: 27vw;
+  height: 27vw; 
+  position: absolute;
+  margin: 44vw 28vw;
+  background-color: rgba(178, 149, 212, 0.425);
+  text-underline-position: inherit;
+}
+
+.circle h2{
+  text-align: center;
+  margin: 40% auto;
+  font-size: 3.6vw;
+  color: white;
+}
+
+.circle p{
+  text-align: center;
+  margin: 40% auto;
+  font-size: 3.6vw;
+  color: white;
+}

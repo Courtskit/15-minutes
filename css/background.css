@@ -26,7 +26,7 @@
   transition-timing-function: linear;
   border-radius: 50px;
   box-shadow: 0 1px 1px rgba(226, 5, 255, 0.432);
-  opacity: .3;
+  opacity: .4;
 }
 
 .bubbles li:nth-child(1) {
@@ -93,7 +93,7 @@
 .bubbles li:nth-child(10) {
   width: 90px;
   height: 90px;
-  left: 15%;
+  left: 45%;
   animation-delay: 4s;
   animation-duration: 20s;
 }
@@ -101,7 +101,7 @@
   width: 50px;
   height: 50px;
   left: 30%;
-  animation-delay: 10s;
+  animation-delay: 0s;
   animation-duration: 12s;
 }
 .bubbles li:nth-child(12) {
@@ -115,7 +115,97 @@
 .bubbles li:nth-child(13) {
   width: 100px;
   height: 100px;
+  left: 13%;
+  animation-delay: 0s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(14) {
+  width: 40px;
+  height: 79px;
+  left: 20%;
+}
+.bubbles li:nth-child(15) {
+  width: 92px;
+  height: 92px;
+  left: 78%;
+  animation-delay: 9s;
+  animation-duration: 17s;
+}
+.bubbles li:nth-child(16) {
+  width: 16px;
+  height: 16px;
+  left: 38%;
+  animation-delay: 2s;
+  animation-duration: 13s;
+}
+.bubbles li:nth-child(17) {
+  width: 90px;
+  height: 90px;
+  left: 83%;
+  animation-delay: 6s;
+  animation-duration: 22s;
+}
+.bubbles li:nth-child(18) {
+  width: 50px;
+  height: 50px;
+  left: 43%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.bubbles li:nth-child(19) {
+  width: 24px;
+  height: 24px;
+  left: 30%;
+  animation-delay: .2s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(20) {
+  width: 30px;
+  height: 30px;
+  left: 80%;
+  animation-delay: .8s;
+  animation-duration: 14s;
+}
+.bubbles li:nth-child(21) {
+  width: 60px;
+  height: 60px;
   left: 15%;
+  animation-delay: .2s;
+  animation-duration: 16s;
+}
+.bubbles li:nth-child(22) {
+  width: 10px;
+  height: 10px;
+  left: 98%;
+  animation-delay: 6s;
+  animation-duration: 9s;
+}
+.bubbles li:nth-child(23) {
+  width: 90px;
+  height: 90px;
+  left: 5%;
+  animation-delay: 4s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(24) {
+  width: 50px;
+  height: 50px;
+  left: 55%;
+  animation-delay: 10s;
+  animation-duration: 12s;
+}
+.bubbles li:nth-child(25) {
+  width: 19px;
+  height: 19px;
+  left: 14%;
+  animation-delay: 1s;
+  animation-duration: 12s;
+}
+
+.bubbles li:nth-child(26) {
+  width: 100px;
+  height: 100px;
+  left: 65%;
   animation-delay: 0s;
   animation-duration: 20s;
   z-index: 0;
@@ -137,19 +227,32 @@
 
 /* HTML ADD ON FOR FLOATING BUBBLES */
 /* <footer>
-  <ul class="bubbles">
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-  </ul>
+<ul class="bubbles">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
 </footer> */

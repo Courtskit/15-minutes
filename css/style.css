@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
 
 body{
-  background-color: rgba(237, 174, 250, 0.144);
+  background-color: rgba(2, 149, 194, 0.24);
 }
 
 /* warm rgba(244, 174, 250, 0.096);
@@ -125,11 +125,11 @@ a{
 }
 
 .img{
-  background-image: url('/img/bubble.png');
+  background-image: url('/img/bubbleDark.png');
   background-size: 134%;
   background-repeat: no-repeat;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: darken;
   transform:rotate(0deg);
   -webkit-transform:rotate(0deg);
   -moz-transform:rotate(0deg);
@@ -137,7 +137,7 @@ a{
 }
 
 .img:hover{
-    background-image: url('/img/bubble.png');
+    background-image: url('/img/bubbleDark.png');
     background-size: 134%;
     background-repeat: no-repeat;
     background-position: center;

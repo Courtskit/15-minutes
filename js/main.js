@@ -40,16 +40,15 @@ function handleUserSetupForm(event){
 
 // prompt for user's name
 function userSetupForm(){
-  var mainContainer = document.getElementById('form'); //id="form" is applied to <main>
-  var outerDiv = document.createElement('div');
-  mainContainer.appendChild(outerDiv);
-  var innerDiv = document.createElement('div');
-  innerDiv.className = 'circle'; // so the circle styling applies to it
-  innerDiv.id = 'username-form'; // so additional styling rules for size/position can be applied.
-  outerDiv.appendChild(innerDiv);
+  var mainContainer = document.getElementById('allCirclesContainer'); //id="form" is applied to <main>
+  
+  var bubble = document.createElement('div');
+  bubble.className = 'circle grow targetBubbles img'; // so the circle styling applies to it
+  bubble.id = 'username-form'; // so additional styling rules for size/position can be applied.
+  mainContainer.appendChild(bubble);
   var form = document.createElement('form'); // form
   form.id = 'delete-me'; // tag it so we can make it disappear again when we're finished with it.
-  innerDiv.appendChild(form);
+  bubble.appendChild(form);
   var label = document.createElement('label'); // label linked to input
   label.for = 'name-field';
   label.textContent = 'Please enter your name here:';

@@ -1,0 +1,155 @@
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translateZ(0);
+  -webkit-filter: blur(1px);
+}
+.bubbles li {
+  position: fixed;
+  list-style: none;
+  display: block;
+  background-image: url('/img/bubble.png');
+  background-size: 134%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  transition:0.5s ease transform;
+  bottom: -120px;
+  animation: circle 20s infinite;
+  transition-timing-function: linear;
+  border-radius: 50px;
+  box-shadow: 0 1px 1px rgba(226, 5, 255, 0.432);
+  opacity: .3;
+}
+
+.bubbles li:nth-child(1) {
+  width: 40px;
+  height: 40px;
+  left: 20%;
+}
+.bubbles li:nth-child(2) {
+  width: 92px;
+  height: 92px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+}
+.bubbles li:nth-child(3) {
+  width: 16px;
+  height: 16px;
+  left: 60%;
+  animation-delay: 4s;
+  animation-duration: 13s;
+}
+.bubbles li:nth-child(4) {
+  width: 90px;
+  height: 90px;
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 22s;
+}
+.bubbles li:nth-child(5) {
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  animation-delay: 7s;
+  animation-duration: 12s;
+}
+.bubbles li:nth-child(6) {
+  width: 24px;
+  height: 24px;
+  left: 90%;
+  animation-delay: .2s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(7) {
+  width: 30px;
+  height: 30px;
+  left: 10%;
+  animation-delay: .8s;
+  animation-duration: 14s;
+}
+.bubbles li:nth-child(8) {
+  width: 60px;
+  height: 60px;
+  left: 70%;
+  animation-delay: .2s;
+  animation-duration: 16s;
+}
+.bubbles li:nth-child(9) {
+  width: 10px;
+  height: 10px;
+  left: 6%;
+  animation-delay: 6s;
+  animation-duration: 9s;
+}
+.bubbles li:nth-child(10) {
+  width: 90px;
+  height: 90px;
+  left: 15%;
+  animation-delay: 4s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(11) {
+  width: 50px;
+  height: 50px;
+  left: 30%;
+  animation-delay: 10s;
+  animation-duration: 12s;
+}
+.bubbles li:nth-child(12) {
+  width: 19px;
+  height: 19px;
+  left: 94%;
+  animation-delay: 1s;
+  animation-duration: 12s;
+}
+
+.bubbles li:nth-child(13) {
+  width: 100px;
+  height: 100px;
+  left: 15%;
+  animation-delay: 0s;
+  animation-duration: 20s;
+  z-index: 0;
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(630deg);
+    transform: translateY(-1080px) rotate(630deg);
+  }
+}
+
+
+
+
+/* HTML ADD ON FOR FLOATING BUBBLES */
+/* <footer>
+  <ul class="bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</footer> */

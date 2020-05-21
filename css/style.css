@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
 
+body{
+  background-color: rgba(237, 174, 250, 0.144);
+}
+
+/* warm rgba(244, 174, 250, 0.096);
+
+soft blue rgba(93, 223, 255, 0.190); */
+
+
 /* this holds all of the circles */
 #allCirclesContainer {
   max-width: 97vw;
@@ -34,7 +43,7 @@ a{
   height: 16vw;
   position: fixed;
   margin: 26vw 73vw;
-  background-color: rgba(76, 249, 255, 0.277);
+  background-color: rgba(196, 250, 252, 0.4);
 }
 
 /* this is the quotes circle */
@@ -43,7 +52,7 @@ a{
   height: 27vw; 
   position: fixed;
   margin: 22vw 6vw;
-  background-color: rgba(175, 137, 218, 0.297);
+  background-color: rgba(49, 216, 238, 0.15);
   text-underline-position: inherit;
 }
 
@@ -61,7 +70,7 @@ a{
   height: 18vw; 
   position: fixed;
   margin: 12vw 52vw;
-  background-color: rgba(81, 250, 171, 0.226);
+  background-color: rgba(64, 237, 235, .3);
 }
 
 /* this is the mind circle */
@@ -70,7 +79,7 @@ a{
   height: 20vw; 
   position: absolute;
   margin: .2vw 76vw;
-  background-color: rgba(0, 89, 255, 0.202);
+  background-color: rgba(0, 89, 255, 0.03);
 }
 
 /* this is the random circle */
@@ -79,7 +88,7 @@ a{
   height: 13vw;
   position: fixed;
   margin: 8vw 30vw;
-  background-color: rgba(255, 255, 255, 0.305);
+  background-color: rgba(255, 255, 255, .305);
 }
 .pRandom{
   margin: 28% auto;
@@ -92,7 +101,7 @@ a{
   height: 9vw;
   position: fixed;
   margin: 32vw 42vw;
-  background-color: rgba(27, 141, 255, 0.205);
+  background-color: rgba(27, 141, 255, 0.1);
 }
 .pAbout{
   margin: 35% auto;
@@ -105,7 +114,7 @@ a{
   height: 18vw;
   position: fixed;
   margin: 2vw 2vw;
-  background-color: rgba(212, 7, 253, 0.192);
+  background-color: rgba(125, 197, 197, 0.2);
 }
 .pUsername{
   margin: 22% auto;

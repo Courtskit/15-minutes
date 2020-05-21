@@ -18,6 +18,15 @@ function UserData(userName, lastFitness=[], lastMental=[], lastNutrition=[], las
 
 
 /// FUNCTIONS:
+// render user's name to the greeting message
+function greetUser(){
+  var welcomeBubble = document.getElementById('username');
+  var displayUserName = document.createElement('p');
+  displayUserName.textContent = `${userData.userName}!`;
+  welcomeBubble.appendChild(displayUserName);
+}
+
+
 // receive data from userSetupForm
 function handleUserSetupForm(event){
   event.preventDefault();
@@ -25,21 +34,21 @@ function handleUserSetupForm(event){
   var form = document.getElementById('delete-me');
   form.remove(); // make form go bye-bye.
   saveUserData();
+  greetUser();
 }
 
 
 // prompt for user's name
 function userSetupForm(){
-  var mainContainer = document.getElementById('form'); //id="form" is applied to <main>
-  var outerDiv = document.createElement('div');
-  mainContainer.appendChild(outerDiv);
-  var innerDiv = document.createElement('div');
-  innerDiv.className = 'circle'; // so the circle styling applies to it
-  innerDiv.id = 'username-form'; // so additional styling rules for size/position can be applied.
-  outerDiv.appendChild(innerDiv);
+  var mainContainer = document.getElementById('allCirclesContainer'); //id="form" is applied to <main>
+  
+  var bubble = document.createElement('div');
+  bubble.className = 'circle grow targetBubbles img'; // so the circle styling applies to it
+  bubble.id = 'username-form'; // so additional styling rules for size/position can be applied.
+  mainContainer.appendChild(bubble);
   var form = document.createElement('form'); // form
   form.id = 'delete-me'; // tag it so we can make it disappear again when we're finished with it.
-  innerDiv.appendChild(form);
+  bubble.appendChild(form);
   var label = document.createElement('label'); // label linked to input
   label.for = 'name-field';
   label.textContent = 'Please enter your name here:';
@@ -49,10 +58,12 @@ function userSetupForm(){
   nameField.name = 'nameField';
   nameField.type = 'text';
   form.appendChild(nameField);
-  var submitButton = document.createElement('button'); // submit button
+
+  var submitButton = document.createElement('input'); // submit button
   submitButton.type = 'submit';
   submitButton.name = 'submit';
   submitButton.textContent = 'submit';
+  form.appendChild(submitButton);
   form.addEventListener('submit', handleUserSetupForm);
 
 }
@@ -62,7 +73,8 @@ function loadUserData(){
   // if (we find userdata in localstorage){userData = new UserData(JSON.parse(the stuff we find in localstorage))}
   // else{userSetupForm();}
   try { // try/catch instead of if/else
-    var userDataFromStorage = localStorage.getItem('userData');
+    var userDataFromStorage = JSON.parse(localStorage.getItem('userData'));
+    
     userData = new UserData(
       userDataFromStorage.userName,
       userDataFromStorage.lastFitness,
@@ -72,7 +84,13 @@ function loadUserData(){
     ); 
   } catch (error) {
     userData = new UserData('');
+    // userSetupForm();
+    // break;
+  }
+  if (userData.userName === ''){
     userSetupForm();
+  }else{
+    greetUser();
   }
 }
 

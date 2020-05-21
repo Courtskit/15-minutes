@@ -72,6 +72,7 @@ h2, img, p {
   height: auto;
   transform: translateY(-50%);
   text-align: center;
+  line-height: 8vw;
 }
 
 h2{
@@ -80,7 +81,12 @@ h2{
 }
 
 img{
-  top: 35%;
+  top: 15%;
+  max-width: 15vw;
+  margin-left: 20vw;
+  padding-top: 25vw;
+  display:block;
+  z-index: -1;
 }
 
 p{

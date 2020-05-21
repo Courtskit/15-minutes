@@ -9,6 +9,7 @@ body{
   text-align: center;
   justify-content: space-between;
   margin-top: 20vh;
+  background-color: rgba(2, 149, 194, 0.10);
 }
 
 main{
@@ -22,7 +23,7 @@ margin: auto;
   height: 18vw;
   border-radius: 50%;
   font-size: 4vw;
-  background-color: rgba(149, 181, 212, 0.658);
+  background-color: rgba(0, 89, 255, 0.075);
   justify-content: center;
   align-items: center;
   display: inline-flex;
@@ -44,34 +45,45 @@ a{
   height: 10vw;
   border-radius: 50%;
   font-size: 3vw;
-  background-color: rgba(149, 181, 212, 0.658);
+  background-color: rgba(0, 89, 255, 0.075);
   justify-content: center;
   align-items: center;
   display: inline-flex;
 }
 
 .img{
-  background-image: url('/img/bubble.png');
+  background-image: url('/img/bubbleDark.png');
   background-size: 134%;
   background-repeat: no-repeat;
   background-position: center;
-  background-blend-mode: multiply;
+  background-blend-mode: darken;
   transform:rotate(0deg);
   -webkit-transform:rotate(0deg);
   -moz-transform:rotate(0deg);
   transition:0.5s ease transform;
 }
 
-
+.img:hover{
+  background-image: url('/img/bubbleDark.png');
+  background-size: 134%;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-blend-mode: lighten 1s; */
+  transform:rotate(120deg);
+  -webkit-transform:rotate(120deg);
+  -moz-transform:rotate(120deg);
+  filter: drop-shadow(0 1mm 1mm  rgba(2, 149, 194, 0.5));
+  z-index: 10;
+}
 
 /* this element will make an element go from low opacity, to clear when hovered// something could also be done with a filter: blur */
-.fade{
+/* .fade{
   opacity:0.6;
 }
 .fade:hover{
   opacity:1;
-  filter: drop-shadow(0 2mm 4mm rgb(134, 134, 134));
-}
+  filter: drop-shadow(0 1mm 1mm rgb(134, 134, 134));
+} */
 
 
 /* this class will make an element grow */

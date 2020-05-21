@@ -70,7 +70,7 @@ a{
 }
 .fade:hover{
   opacity:1;
-  filter: drop-shadow(0 2mm 4mm rgb(134, 134, 134));
+  filter: drop-shadow(0 1mm 1mm rgb(134, 134, 134));
 }
 
 

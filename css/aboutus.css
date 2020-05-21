@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
+*{
+  font-family: 'Gaegu', cursive;
+}
 body{
   max-width: 90%;
   height: 99%;
@@ -45,6 +49,19 @@ a{
   align-items: center;
   display: inline-flex;
 }
+
+.img{
+  background-image: url('/img/bubble.png');
+  background-size: 134%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  transition:0.5s ease transform;
+}
+
 
 
 /* this element will make an element go from low opacity, to clear when hovered// something could also be done with a filter: blur */

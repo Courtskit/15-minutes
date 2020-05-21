@@ -126,6 +126,7 @@ a{
   -moz-transform:rotate(0deg);
   transition:0.5s ease transform;
 }
+
 .img:hover{
     background-image: url('/img/bubble.png');
     background-size: 134%;

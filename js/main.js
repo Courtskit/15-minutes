@@ -49,10 +49,12 @@ function userSetupForm(){
   nameField.name = 'nameField';
   nameField.type = 'text';
   form.appendChild(nameField);
-  var submitButton = document.createElement('button'); // submit button
+
+  var submitButton = document.createElement('input'); // submit button
   submitButton.type = 'submit';
   submitButton.name = 'submit';
   submitButton.textContent = 'submit';
+  form.appendChild(submitButton);
   form.addEventListener('submit', handleUserSetupForm);
 
 }
@@ -62,7 +64,8 @@ function loadUserData(){
   // if (we find userdata in localstorage){userData = new UserData(JSON.parse(the stuff we find in localstorage))}
   // else{userSetupForm();}
   try { // try/catch instead of if/else
-    var userDataFromStorage = localStorage.getItem('userData');
+    var userDataFromStorage = JSON.parse(localStorage.getItem('userData'));
+    
     userData = new UserData(
       userDataFromStorage.userName,
       userDataFromStorage.lastFitness,
@@ -72,6 +75,10 @@ function loadUserData(){
     ); 
   } catch (error) {
     userData = new UserData('');
+    // userSetupForm();
+    // break;
+  }
+  if (userData.userName === ''){
     userSetupForm();
   }
 }

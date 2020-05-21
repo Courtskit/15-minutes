@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap');
 
 body{
-  background-color: rgba(2, 149, 194, 0.10);
+  background-color: rgba(2, 149, 194, 0.08);
 }
 
 /* warm rgba(244, 174, 250, 0.096);
@@ -43,7 +43,7 @@ a{
   height: 16vw;
   position: fixed;
   margin: 26vw 73vw;
-  background-color: rgba(76, 249, 255, 0.1);
+  background-color: rgba(76, 249, 255, 0.277);
 }
 
 /* this is the quotes circle */
@@ -70,7 +70,7 @@ a{
   height: 18vw; 
   position: fixed;
   margin: 12vw 52vw;
-  background-color: rgba(81, 250, 171, 0.1);
+  background-color: rgba(81, 250, 171, 0.226);
 }
 
 /* this is the mind circle */
@@ -79,7 +79,7 @@ a{
   height: 20vw; 
   position: absolute;
   margin: .2vw 76vw;
-  background-color: rgba(0, 89, 255, 0.1);
+  background-color: rgba(0, 89, 255, 0.202);
 }
 
 /* this is the random circle */

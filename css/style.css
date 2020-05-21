@@ -89,6 +89,7 @@ a{
   position: fixed;
   margin: 8vw 30vw;
   background-color: rgb(208, 252, 247);
+  cursor: pointer; 
 }
 .pRandom{
   margin: 28% auto;

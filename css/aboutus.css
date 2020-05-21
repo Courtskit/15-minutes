@@ -11,6 +11,7 @@ main{
 margin: auto;
 }
 
+
 /* this class is set on each div tag to make the circles */
 .formatCircle{
   width: 18vw;
@@ -22,8 +23,8 @@ margin: auto;
   align-items: center;
   display: inline-flex;
   margin: 1vw;
-  animation-name: moveToRight;
-  animation-duration: 2s;
+  /* animation-name: moveToRight;
+  animation-duration: 2s; */
 }
 
 a{
@@ -71,7 +72,7 @@ a{
   transition-duration: 1s;
 } */
 
-
+/* 
 @keyframes moveToRight {
   0% {
     transform: translateX(200px);
@@ -81,4 +82,4 @@ a{
     transform: translateX(0);
     opacity: 1;
   }
-}              
+}               */

@@ -18,6 +18,15 @@ function UserData(userName, lastFitness=[], lastMental=[], lastNutrition=[], las
 
 
 /// FUNCTIONS:
+// render user's name to the greeting message
+function greetUser(){
+  var welcomeBubble = document.getElementById('username');
+  var displayUserName = document.createElement('p');
+  displayUserName.textContent = `${userData.userName}!`;
+  welcomeBubble.appendChild(displayUserName);
+}
+
+
 // receive data from userSetupForm
 function handleUserSetupForm(event){
   event.preventDefault();
@@ -25,6 +34,7 @@ function handleUserSetupForm(event){
   var form = document.getElementById('delete-me');
   form.remove(); // make form go bye-bye.
   saveUserData();
+  greetUser();
 }
 
 
@@ -80,6 +90,8 @@ function loadUserData(){
   }
   if (userData.userName === ''){
     userSetupForm();
+  }else{
+    greetUser();
   }
 }
 

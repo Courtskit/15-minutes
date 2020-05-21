@@ -1,5 +1,6 @@
 .targetBubbles{
   animation: transitionIn 2s;
+  animation: transitionOut 2s;
 }
 @keyframes transitionIn {
   from {

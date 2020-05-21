@@ -37,10 +37,10 @@ function displayRandomQuote(){ //TO DO: this still needs to check against userda
   content.id = 'quote-body'; //just in case we need to target this for styling.
   content.textContent = quoteBucket[randomNumber].quoteText;
   quoteContainer.appendChild(content);
-  var author = document.createElement('p');
-  author.id = 'author'; //in case we need to target for styling
-  author.textContent = `~ ${quoteBucket[randomNumber].author}`;
-  quoteContainer.appendChild(author);
+  // var author = document.createElement('p');
+  // author.id = 'author'; //in case we need to target for styling
+  // author.textContent = `~ ${quoteBucket[randomNumber].author}`;
+  // quoteContainer.appendChild(author);
 
   updateUserData('quote', quoteBucket[randomNumber].title);
   // attach event listener for 'click'

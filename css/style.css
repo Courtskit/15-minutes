@@ -215,7 +215,7 @@ a{
 }
 
 .img{
-  background-image: url('./img/bubbleDark60.png');
+  background-image: url("./img/bubbleDark60.png");
   background-size: 134%;
   background-repeat: no-repeat;
   background-position: center;
@@ -227,7 +227,7 @@ a{
 }
 
 .img:hover{
-    background-image: url('./img/bubbleDark.png');
+    background-image: url("./img/bubbleDark.png");
     background-size: 134%;
     background-repeat: no-repeat;
     background-position: center;
@@ -293,4 +293,4 @@ a{
   100% {
     transform: translate(0vw, 0vw) scaleY(.97) scaleX(0.98);
   }
-  
+}

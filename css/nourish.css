@@ -41,12 +41,11 @@ body{
 }
 
 .content {
-  width: 70vw;
-  height: 70vw;
+  width: 66vw;
+  height: 66vw;
   border-radius: 50%;
   font-size: 2vw;
   color: #fff;
-  line-height: 500px;
   text-align: center;
   position: fixed;
   margin: -3vw -3vw;

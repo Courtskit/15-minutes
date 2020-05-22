@@ -92,7 +92,7 @@ function loadUserData(){
   if (userData.userName === ''){
     userSetupForm();
   }else{
-    if (!document.getElementsByClassName('activitypage')){
+    if (document.getElementById('username')){
       greetUser();
     }
   }

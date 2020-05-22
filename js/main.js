@@ -12,11 +12,6 @@ function UserData(userName, lastFitness=[], lastMental=[], lastNutrition=[], las
   this.lastQuote = lastQuote;
 }; // we can expand this object later to store any user preferences. Maybe they can choose their own color theme?
 
-
-
-/// PROTOTYPES:
-
-
 /// FUNCTIONS:
 // render user's name to the greeting message
 function greetUser(){
@@ -25,7 +20,6 @@ function greetUser(){
   displayUserName.textContent = `${userData.userName}!`;
   welcomeBubble.appendChild(displayUserName);
 }
-
 
 // receive data from userSetupForm
 function handleUserSetupForm(event){
@@ -37,11 +31,9 @@ function handleUserSetupForm(event){
   greetUser();
 }
 
-
 // prompt for user's name
 function userSetupForm(){
-  var mainContainer = document.getElementById('allCirclesContainer'); //id="form" is applied to <main>
-  
+  var mainContainer = document.getElementById('allCirclesContainer'); //id="form" is applied to <main>  
   var bubble = document.createElement('div');
   bubble.className = 'circle grow targetBubbles img'; // so the circle styling applies to it
   bubble.id = 'username-form'; // so additional styling rules for size/position can be applied.
@@ -59,7 +51,6 @@ function userSetupForm(){
   nameField.type = 'text';
   nameField.id = 'input-field';
   form.appendChild(nameField);
-
   var submitButton = document.createElement('input'); // submit button
   submitButton.type = 'submit';
   submitButton.name = 'submit';
@@ -67,16 +58,12 @@ function userSetupForm(){
   submitButton.id = 'submit-button';
   form.appendChild(submitButton);
   form.addEventListener('submit', handleUserSetupForm);
-
 }
 
 // check localstorage for userdata, load it if we have it, call the form request function if we don't.
 function loadUserData(){
-  // if (we find userdata in localstorage){userData = new UserData(JSON.parse(the stuff we find in localstorage))}
-  // else{userSetupForm();}
-  try { // try/catch instead of if/else
-    var userDataFromStorage = JSON.parse(localStorage.getItem('userData'));
-    
+  try {
+    var userDataFromStorage = JSON.parse(localStorage.getItem('userData'));    
     userData = new UserData(
       userDataFromStorage.userName,
       userDataFromStorage.lastFitness,
@@ -86,18 +73,17 @@ function loadUserData(){
     ); 
   } catch (error) {
     userData = new UserData('');
-    // userSetupForm();
-    // break;
   }
   if (userData.userName === ''){
     userSetupForm();
   }else{
-    if (!document.getElementsByClassName('activitypage')){
+    if (document.getElementById('username')){
       greetUser();
     }
   }
 }
 
+// push userData to locanStorage
 function saveUserData(){
   var saveUserData = JSON.stringify(userData); // stringify
   localStorage.setItem('userData', saveUserData); // save locally
@@ -123,8 +109,5 @@ function updateUserData(type, title){// type must be EXACTLY either 'fitness', '
   saveUserData();
 }
 
-
-
 /// EXECUTABLE CODE:
-
 loadUserData();

@@ -1,22 +1,88 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/reset.css" type="text/css"/>
-  <link rel="stylesheet" href="/css/style.css" type="text/css"/>
-  <title></title>
+  <link rel="stylesheet" href="/css/reset.css" type="text/css" />
+  <link rel="stylesheet" href="/css/style.css" type="text/css" />
+  <link rel="stylesheet" href="/css/transition.css" type="text/css" />
+  <link rel="stylesheet" href="/css/background.css" type="text/css" />
+
+  <title>15 Minutes</title>
 </head>
+
 <body>
-  <header>
+  <main id="form">
 
-  </header>
-  <main>
+    <div id="allCirclesContainer">
 
+      <div id="body" class="circle grow targetBubbles img wiggle">
+        <p><a href="physical.html">Body</a></p>
+      </div>
+
+      <!-- make sure there is the id called quote on element -->
+      <section id="quote" class="circle grow targetBubbles img">
+        <!-- we must have this p tag for javascript quote attaches here -->
+        <p></p>
+      </section>
+
+      <div id="nourish" class="circle grow targetBubbles img">
+        <p><a href="nutrition.html">Nourish</a></p>
+      </div>
+
+      <div id="mind" class="circle grow targetBubbles img">
+        <p><a href="mental.html">Mind</a></p>
+      </div>
+
+      <a href="javascript:void(0)"><section id="random" class="circle grow  targetBubbles img">
+        <p class="pRandom">Random</p>
+      </section></a>
+
+      <section id="about" class="circle grow targetBubbles img">
+        <p class="pAbout"><a href="aboutus.html">About</a></p>
+      </section>
+
+      <section id="username" class="circle grow  targetBubbles img">
+        <p class="pUsername">Welcome</p>
+      </section>
+
+    </div>
   </main>
-  <footer>
-
-  </footer>
+  <script src="/objects/quotes.json"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/quotes.js"></script>
+  <script src="/js/randomlink.js"></script>
 </body>
-<script src="/js/app.js"></script>
+<footer>
+  <ul class="bubbles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</footer>
+
 </html>

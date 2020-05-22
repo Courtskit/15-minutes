@@ -1,0 +1,260 @@
+.bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transform: translateZ(0);
+  -webkit-filter: blur(1px);
+}
+.bubbles li {
+  position: fixed;
+  list-style: none;
+  display: block;
+  background-image: url('/img/bubbleDark.png');
+  background-size: 134%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: multiply;
+  transform:rotate(0deg);
+  -webkit-transform:rotate(0deg);
+  -moz-transform:rotate(0deg);
+  transition:0.5s ease transform;
+  bottom: -190px;
+  animation: circle 20s infinite;
+  transition-timing-function: linear;
+  border-radius: 20vw;
+  /* box-shadow: 0 1px 1px rgba(226, 5, 255, 0.432); */
+  opacity: .4;
+}
+
+.bubbles li:nth-child(1) {
+  width: 3vw;
+  height: 3vw;
+  left: 75%;
+}
+.bubbles li:nth-child(2) {
+  width: 9vw;
+  height: 9vw;
+  left: 85%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+}
+.bubbles li:nth-child(3) {
+  width: 12vw;
+  height: 12vw;
+  left: 60%;
+  animation-delay: 4s;
+  animation-duration: 13s;
+}
+.bubbles li:nth-child(4) {
+  width: 6vw;
+  height: 6vw;
+  left: 80%;
+  animation-delay: 1s;
+  animation-duration: 22s;
+
+}
+.bubbles li:nth-child(5) {
+  width: 4vw;
+  height: 4vw;
+  left: 50%;
+  animation-delay: 4s;
+  animation-duration: 9s;
+}
+.bubbles li:nth-child(6) {
+  width: 3vw;
+  height: 3vw;
+  left: 40%;
+  animation-delay: .2s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(7) {
+  width: 9vw;
+  height: 9vw;
+  left: 20%;
+  animation-delay: .8s;
+  animation-duration: 14s;
+}
+.bubbles li:nth-child(8) {
+  width: 6vw;
+  height: 6vw;
+  left: 70%;
+  animation-delay: .2s;
+  animation-duration: 16s;
+}
+.bubbles li:nth-child(9) {
+  width: 3vw;
+  height: 3vw;
+  left: 6%;
+  animation-delay: 6s;
+  animation-duration: 9s;
+}
+.bubbles li:nth-child(10) {
+  width: 9vw;
+  height: 9vw;
+  left: 45%;
+  animation-delay: 4s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(11) {
+  width: 3vw;
+  height: 3vw;
+  left: 30%;
+  animation-delay: 10s;
+  animation-duration: 12s;
+}
+.bubbles li:nth-child(12) {
+  width: 9vw;
+  height: 9vw;
+  left: 94%;
+  animation-delay: 5s;
+  animation-duration: 12s;
+}
+
+.bubbles li:nth-child(13) {
+  width: 10vw;
+  height: 10vw;
+  left: 15%;
+  animation-delay: 8s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(14) {
+  width: 4vw;
+  height: 4vw;
+  left: 10%;
+  animation-delay: 8s;
+  animation-duration: 15s;
+}
+.bubbles li:nth-child(15) {
+  width: 8vw;
+  height: 8vw;
+  left: 78%;
+  animation-delay: 9s;
+  animation-duration: 17s;
+}
+.bubbles li:nth-child(16) {
+  width: 3vw;
+  height: 3vw;
+  left: 38%;
+  animation-delay: 13s;
+  animation-duration: 13s;
+}
+.bubbles li:nth-child(17) {
+  width: 9vw;
+  height: 9vw;
+  left: 83%;
+  animation-delay: 6s;
+  animation-duration: 22s;
+}
+.bubbles li:nth-child(18) {
+  width: 5vw;
+  height: 5vw;
+  left: 43%;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+.bubbles li:nth-child(19) {
+  width: 2vw;
+  height: 2vw;
+  left: 30%;
+  animation-delay: 8s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(20) {
+  width: 3vw;
+  height: 3vw;
+  left: 80%;
+  animation-delay: .8s;
+  animation-duration: 14s;
+}
+.bubbles li:nth-child(21) {
+  width: 3vw;
+  height: 3vw;
+  left: 15%;
+  animation-delay: 15s;
+  animation-duration: 16s;
+}
+.bubbles li:nth-child(22) {
+  width: 10vw;
+  height: 10vw;
+  left: 98%;
+  animation-delay: 6s;
+  animation-duration: 9s;
+}
+.bubbles li:nth-child(23) {
+  width: 9vw;
+  height: 9vw;
+  left: 5%;
+  animation-delay: 6s;
+  animation-duration: 20s;
+}
+.bubbles li:nth-child(24) {
+  width: 5vw;
+  height: 5vw;
+  left: 55%;
+  animation-delay: 10s;
+  animation-duration: 12s;
+}
+.bubbles li:nth-child(25) {
+  width: 8vw;
+  height: 8vw;
+  left: 34%;
+  animation-delay: 3s;
+  animation-duration: 12s;
+}
+
+.bubbles li:nth-child(26) {
+  width: 3vw;
+  height: 3vw;
+  left: 65%;
+  animation-delay: 9s;
+  animation-duration: 20s;
+}
+
+@keyframes circle {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-1080px) rotate(630deg);
+    transform: translateY(-1080px) rotate(630deg);
+  }
+}
+
+
+
+
+/* HTML ADD ON FOR FLOATING BUBBLES */
+/* <footer>
+<ul class="bubbles">
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+  <li></li>
+</ul>
+</footer> */

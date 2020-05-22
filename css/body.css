@@ -13,7 +13,6 @@ body{
   border-radius: 50%;
   font-size: 4vw;
   color: #fff;
-  line-height: 500px;
   text-align: center;
   position: fixed;
   margin: 30vw 76vw;
@@ -31,7 +30,6 @@ body{
   border-radius: 50%;
   font-size: 2vw;
   color: #fff;
-  line-height: 500px;
   text-align: center;
   position: fixed;
   margin: 18vw 85vw;
@@ -72,7 +70,6 @@ a{
   place-items: center;
 }
 
-
 h2, img, p {
   position: absolute;
   place-items: center;
@@ -86,7 +83,7 @@ h2, img, p {
 
 h2{
   top: 15%;
-  font-size: 8vw;
+  font-size: 7.5vw;
 }
 
 img{
@@ -104,21 +101,10 @@ img{
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: darken;
-  /* transform:rotate(0deg);
-  -webkit-transform:rotate(0deg);
-  -moz-transform:rotate(0deg); */
   transition:0.5s ease transform;
 }
 
 .img:hover{
-  /* background-image: url('/img/bubbleDark.png');
-  background-size: 134%;
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* background-blend-mode: lighten 1s; */
-  /* transform:rotate(120deg);
-  -webkit-transform:rotate(120deg);
-  -moz-transform:rotate(120deg); */
   filter: drop-shadow(0 1mm 2mm  rgba(2, 149, 194, 0.5));
   z-index: 10;
 }
@@ -142,6 +128,7 @@ p{
   top: 65%;
   font-size: 4vw;
 }
+
 @keyframes moveToRight {
   0% {
     transform: translateY(-60px) translateX(-30px);

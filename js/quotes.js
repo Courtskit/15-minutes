@@ -32,6 +32,9 @@ function loadQuotes(){
 // display a random quote
 function displayRandomQuote(){ //TO DO: this still needs to check against userdata to prevent repeats.
   var randomNumber = Math.floor(Math.random() * quoteBucket.length);
+  while (quoteBucket[randomNumber].title === userData.lastQuote[0]){ // make sure this isn't repeating the user's most recent activity
+    randomNumber = Math.floor(Math.random() * quoteBucket.length);
+  }
   var quoteContainer = document.getElementById('quote');//check if that's the right ID
   var content = document.createElement('p');
   content.id = 'quote-body'; //just in case we need to target this for styling.
@@ -43,17 +46,17 @@ function displayRandomQuote(){ //TO DO: this still needs to check against userda
   // quoteContainer.appendChild(author);
 
   updateUserData('quote', quoteBucket[randomNumber].title);
-  // attach event listener for 'click'
+  quoteContainer.addEventListener('click', rotateQuote);
 }
 
 // called when user clicks on quote to generate a new quote.
 // might use this later?
-// function rotateQuote(event){
-//   event.preventDefault();
-//   // grab parent element inside of quote bubble.
-//   // clear contents of parent.
-//   displayRandomQuote();
-// }
+function rotateQuote(event){
+  event.preventDefault();
+  var quoteBody = document.getElementById('quote-body');
+  quoteBody.remove();
+  displayRandomQuote();
+}
 
 
 /// EXECUTIBLE CODE:

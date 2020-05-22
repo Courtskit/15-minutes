@@ -12,7 +12,6 @@ body{
   border-radius: 50%;
   font-size: 4vw;
   color: #fff;
-  line-height: 500px;
   text-align: center;
   position: fixed;
   margin: .2vw 76vw;
@@ -28,7 +27,6 @@ body{
   border-radius: 50%;
   font-size: 2vw;
   color: #fff;
-  line-height: 500px;
   text-align: center;
   position: fixed;
   margin: 22vw 85vw;
@@ -45,7 +43,6 @@ body{
   border-radius: 50%;
   font-size: 2vw;
   color: #fff;
-  line-height: 500px;
   text-align: center;
   position: fixed;
   margin: -3vw -3vw;
@@ -84,7 +81,7 @@ h2, img, p {
 
 h2{
   top: 15%;
-  font-size: 8vw;
+  font-size: 7.5vw;
 }
 
 img{
@@ -120,6 +117,7 @@ img{
   filter: drop-shadow(0 1mm 2mm  rgba(2, 149, 194, 0.5));
   z-index: 10;
 }
+
 .grow{
   transition: 1s ease;
 }

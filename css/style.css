@@ -79,7 +79,7 @@ a{
   max-width: 20vw;
   margin: auto;
   margin-top: -6vw;
-
+  line-height: 1.9em;
 }
 
 /* this is the nourish circle */
@@ -285,6 +285,10 @@ a{
 
 @keyframes wiggle {
   0% {
+    transform: translate(.5vw, 0) scaleY(0.98) scaleX(1.01);
+    border-radius: 100%;
+  }
+  10%{
     transform: translate(1vw, 0) scaleY(0.98) scaleX(1.01);
     border-radius: 100%;
   }

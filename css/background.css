@@ -21,7 +21,7 @@
   -webkit-transform:rotate(0deg);
   -moz-transform:rotate(0deg);
   transition:0.5s ease transform;
-  bottom: -120px;
+  bottom: -190px;
   animation: circle 20s infinite;
   transition-timing-function: linear;
   border-radius: 20vw;

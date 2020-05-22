@@ -12,7 +12,7 @@
   position: fixed;
   list-style: none;
   display: block;
-  background-image: url('./img/bubbleDark.png');
+  background-image: url('../img/bubbleDark.png');
   background-size: 134%;
   background-repeat: no-repeat;
   background-position: center;

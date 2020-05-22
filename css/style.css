@@ -53,7 +53,6 @@ a{
   position: fixed;
   margin: 22vw 6vw;
   background-color: rgba(49, 216, 238, 0.1);
-  text-underline-position: inherit;
 }
 
 /* this is the container that the quote will be in  */
@@ -61,7 +60,9 @@ a{
   padding: 2vw;
   font-size: 1.8vw;
   max-width: 20vw;
-  margin-top: -9vh;
+  margin: auto;
+  margin-top: -6vw;
+
 }
 
 /* this is the nourish circle */
@@ -116,13 +117,58 @@ a{
   position: fixed;
   margin: 2vw 2vw;
   background-color: rgba(125, 197, 197, 0.2);
+  display: fixed;
 }
-.pUsername{
-  margin: 22% auto;
+
+#username p{
+  margin: 18% auto;
   font-size: 3.2vw;
-  text-underline-position: inherit;
-  height: 10vw; 
+  height: 1vw; 
   max-width: 19vw;
+}
+
+/* this is the username form circle */
+#username-form{
+  width: 60vw;
+  height: 60vw;
+  position: fixed;
+  margin: -4vw 18vw;
+  background-color: rgba(125, 197, 197, 0.2);
+}
+
+/* this is the <form> element inside the form bubble */
+#delete-me{
+  margin: 32% auto;
+  font-size: 4vw;
+  text-align: center;
+  color: white;
+}
+
+/* styling for the input elements within the form */
+#input-field{
+  display: flex;
+  flex-direction: column;
+  border: 1px rgba(125, 197, 197, 1) solid;
+  align-content: center;
+  margin: auto;
+  width: 16vw;
+  height: 6vw;
+  margin-top: 4vh;
+  border-radius: 8%;
+  opacity: 0.3;
+  font-size: 3vw;
+  font-family: 'Gaegu', cursive;
+}
+
+#submit-button{
+  height: 3vw;
+  width: 10vw;
+  border-radius: 8%;
+  margin-top: 2.5vh;
+  font-size: 2vw;
+  font-family: 'Gaegu', cursive;
+  color: white;
+  background-color: rgba(125, 197, 197, 1);
 }
 
 .img{

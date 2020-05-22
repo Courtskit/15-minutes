@@ -31,7 +31,7 @@ function greetUser(){
 function handleUserSetupForm(event){
   event.preventDefault();
   userData.userName = event.target.nameField.value; // push form data directly to object constructor and our job is done.
-  var form = document.getElementById('delete-me');
+  var form = document.getElementById('username-form');
   form.remove(); // make form go bye-bye.
   saveUserData();
   greetUser();
@@ -57,12 +57,14 @@ function userSetupForm(){
   nameField.id = 'name-field';
   nameField.name = 'nameField';
   nameField.type = 'text';
+  nameField.id = 'input-field';
   form.appendChild(nameField);
 
   var submitButton = document.createElement('input'); // submit button
   submitButton.type = 'submit';
   submitButton.name = 'submit';
   submitButton.textContent = 'submit';
+  submitButton.id = 'submit-button';
   form.appendChild(submitButton);
   form.addEventListener('submit', handleUserSetupForm);
 

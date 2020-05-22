@@ -92,7 +92,9 @@ function loadUserData(){
   if (userData.userName === ''){
     userSetupForm();
   }else{
-    greetUser();
+    if (!document.getElementsByClassName('activitypage')){
+      greetUser();
+    }
   }
 }
 
@@ -107,12 +109,16 @@ function updateUserData(type, title){// type must be EXACTLY either 'fitness', '
   switch(type){
     case 'fitness':
       userData.lastFitness.unshift(title);
+      break;
     case 'mental':
       userData.lastMental.unshift(title);
+      break;
     case 'nutrition':
       userData.lastNutrition.unshift(title);
+      break;
     case 'quote':
       userData.lastQuote.unshift(title);
+      break;
   }
   saveUserData();
 }

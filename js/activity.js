@@ -49,21 +49,24 @@ function loadActivities(){
 // select a random activity
 function selectActivity(){
   var lastActivity = []; //put activity history into here
-  switch(pageTitle.id){
+  switch(pageTitle[0].id){
     case 'fitness':
-      lastActivity = userData.lastFitness;
+      lastActivity = userData.lastFitness[0];
+      break;
     case 'mental':
-      lastActivity = userData.lastMental;
+      lastActivity = userData.lastMental[0];
+      break;
     case 'nutrition':
-      lastActivity = userData.lastNutrition;
+      lastActivity = userData.lastNutrition[0];
+      break;
   }
   
   var randomNumber = Math.floor(Math.random() * activityBucket.length);
-  while (activityBucket[randomNumber].title === lastActivity[0]){ // make sure this isn't repeating the user's most recent activity
+  while (activityBucket[randomNumber].title === lastActivity){ // make sure this isn't repeating the user's most recent activity
     randomNumber = Math.floor(Math.random() * activityBucket.length);
   }
   activityBucket[randomNumber].render();
-  updateUserData(pageTitle.id, activityBucket[randomNumber].title);
+  updateUserData(pageTitle[0].id, activityBucket[randomNumber].title);
 }
 
 /// EXECUTABLE CODE:

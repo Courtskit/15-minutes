@@ -9,7 +9,6 @@ function Activity(title, image, shortContent, extendedContent){
   this.title = title; // each activity needs a unique title. We'll display this title to the user.
   this.image = image; // image file path. Should point to something in the ./img/ folder.
   this.shortContent = shortContent; // brief explaination. A long string that we can put inside a <p>
-  this.extendedContent = extendedContent; // we talked about the user being able to click for more details to be displayed.
 };
 
 /// PROTOTYPES:
@@ -40,8 +39,7 @@ function loadActivities(){
     activityBucket.push(new Activity( //process contents through object constructor and push to array.
       activitiesJSONified[i].title,
       activitiesJSONified[i].image,
-      activitiesJSONified[i].shortContent,
-      activitiesJSONified[i].extendedContent
+      activitiesJSONified[i].shortContent
     ));
   }
 }
@@ -59,8 +57,7 @@ function selectActivity(){
     case 'nutrition':
       lastActivity = userData.lastNutrition[0];
       break;
-  }
-  
+  }  
   var randomNumber = Math.floor(Math.random() * activityBucket.length);
   while (activityBucket[randomNumber].title === lastActivity){ // make sure this isn't repeating the user's most recent activity
     randomNumber = Math.floor(Math.random() * activityBucket.length);
@@ -72,4 +69,3 @@ function selectActivity(){
 /// EXECUTABLE CODE:
 loadActivities();
 selectActivity();
-
